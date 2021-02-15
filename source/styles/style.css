@@ -311,19 +311,19 @@ button:active {
 }
 
 .box1 {
-    background-image: url(../source/images/box-1.png);
+    background-image: url(../images/box-1.png);
 }
 
 .box2 {
-    background-image: url(/source/images/box-2.png);
+    background-image: url(../images/box-2.png);
 }
 
 .box3 {
-    background-image: url(source/images/box-3.png);
+    background-image: url(../images/box-3.png);
 }
 
 .box4 {
-    background-image: url(images/box-1.png);
+    background-image: url(../images/box-1.png);
 }
 
 .box1 span,
