@@ -2,9 +2,12 @@
 <html>
 
 <head>
+
     <meta charset="UTF-8" lang="es">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="source/styles/style.css" type="text/css">
+
+
     <script src="https://kit.fontawesome.com/79c5bd8f0b.js" crossorigin="anonymous"></script>
     </script>
     <title>
@@ -16,14 +19,18 @@
     <header>
         <nav>
             <!--Logo Section-->
-            <a href="#" class="logo">Estarlin  Rosario </a>
+            <a href="index.html" class="logo">Estarlin  Rosario </a>
+
             <!--Menu Buttons-->
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-container">About</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
                 <li><a href="#projects">Projects</a></li>
             </ul>
+            <div class="toggle"></div>
+            </div>
+
         </nav>
     </header>
 
@@ -104,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact-me">
+        <div class="contact-me" id="contact-me">
             <p>If you want to reach out to Me</p>
             <button>Contact Me</button>
         </div>
@@ -127,6 +134,17 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
+    <script type="text/javascript" src="/source/js/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.toggle').click(function() {
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+
+            })
+        })
+    </script>
 </body>
 
 </html>
