@@ -522,13 +522,16 @@ footer p:nth-child(3) {
     font-size: 20pt;
 }
 
+.toggle {
+    display: none;
+}
+
 
 /* Media queries */
 
+
+/* 
 @media(min-width:600px) {
-    * {
-        box-sizing: border-box;
-    }
     .text-container {
         top: 46%;
     }
@@ -584,21 +587,34 @@ footer p:nth-child(3) {
         height: 35px;
         width: 160px;
     }
-}
+} */
 
-@media(max-width:600px) {
+@media(max-width:750px) {
+    .logo {
+        font-size: 50pt;
+    }
     section {
-        background-image: none;
         background-color: #f7f7f7;
+        width: 1050px;
+        padding: 5%;
+    }
+    nav {
+        width: 1000px;
+        padding: 10%;
+        height: 30vh;
+    }
+    .toggle {
+        display: flex;
+        font-size: 30pt;
     }
     .text-container p:nth-child(2) {
-        line-height: 40px;
+        line-height: 70px;
         padding: 0px;
         margin: 0px;
     }
     .text-container {
-        top: 50%;
-        left: 50%;
+        top: 80%;
+        left: 60%;
         transform: translate(-50%, -50%);
         width: 80%;
     }
@@ -644,11 +660,55 @@ footer p:nth-child(3) {
         display: flex !important;
     }
     .about-container {
-        top: 0px;
-        flex-direction: column;
-        width: 90%;
+        width: 1000px;
+        padding: 10%;
+        height: 100vh;
+    }
+    .projects {
+        width: 1000px;
         height: auto;
-        padding: 30px 0px;
-        align-items: center;
+    }
+    .projects-text p:nth-child(1) {
+        font-size: 50pt;
+    }
+    .projects-text p:nth-child(2) {
+        font-size: 25pt;
+    }
+    .projects-text p:nth-child(3) {
+        font-size: 30pt;
+    }
+    .box-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        flex-grow: 1;
+        margin: 10px;
+    }
+    .contact-me {
+        width: 1000px;
+        height: 40vh;
+        padding: 0% 10%;
+    }
+    .contact-me p:nth-child(1) {
+        font-size: 40pt;
+    }
+    .contact-me button {
+        font-size: 20pt;
+    }
+    footer {
+        padding: 7%;
+        width: 1000px;
+    }
+    footer p:nth-child(1) {
+        font-size: 30pt;
+    }
+    footer p:nth-child(2),
+    footer p:nth-child(3),
+    footer p:nth-child(4) {
+        font-size: 20pt;
     }
 }
