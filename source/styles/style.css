@@ -515,7 +515,7 @@ footer p:nth-child(3) {
     height: 70px;
     padding: 0px;
     margin: 0px;
-    line-height: opx;
+    line-height: 0px;
     background-color: white;
     border: 1px solid #cbcbcb;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -732,64 +732,238 @@ footer p:nth-child(3) {
     footer p:nth-child(4) {
         font-size: 30pt;
     }
+    .attached-icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        padding: 0px;
+        margin: 0px;
+        line-height: 0px;
+        background-color: white;
+        border: 1px solid #cbcbcb;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    }
+    .attached-icons i {
+        font-size: 40pt;
+    }
 }
 
-
-/* 
-@media(min-width:600px) {
+@media(max-width:640px) {
+    .logo {
+        font-size: 50pt;
+    }
+    section {
+        background-color: #f7f7f7;
+        width: 1000px;
+        padding: 10%;
+    }
+    nav {
+        width: 1000px;
+        padding: 10%;
+        height: 30vh;
+    }
+    .toggle {
+        display: flex;
+        font-size: 70pt;
+        color: #6d6d6d;
+    }
+    .text-container p:nth-child(2) {
+        line-height: 70px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .text-container p:nth-child(1) {
+        font-size: 30pt;
+    }
+    .text-container p:nth-child(2) {
+        font-size: 60pt;
+        width: 600px;
+    }
+    .text-container p:nth-child(3) {
+        font-size: 30pt;
+        width: 800px;
+    }
     .text-container {
-        top: 46%;
+        top: 103%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
     }
     .text-container button {
-        margin: 5px;
+        border-radius: 35px;
+        width: 300px;
+        height: 70px;
+        font-size: 30px;
+    }
+    nav ul {
+        margin: 0px;
+        padding: 0px;
+        background-color: white;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        display: none;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+    nav ul li a {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 3em;
+        text-transform: uppercase;
+        color: #6d6d6d;
+    }
+    .toggle:before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 30px;
+        z-index: 1;
+    }
+    .toggle.active:before {
+        content: '\f00d';
+        position: fixed;
+        right: 25px;
+        line-height: 0px;
+    }
+    nav.active ul {
+        display: flex !important;
     }
     .about-container {
-        width: 90%;
-        border-radius: 45px;
-    }
-    .about-container img {
-        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        padding: 10%;
+        height: auto;
     }
     .about-text {
-        width: auto;
+        width: 1000px;
     }
-    .about-text p:nth-child(1) {
-        font-size: 15px;
+    .about-container p:nth-child(1) {
+        font-size: 50pt;
     }
-    .about-text p:nth-child(2) {
-        font-size: 12px;
+    .about-container p:nth-child(2) {
+        font-size: 30pt;
     }
-    .about-text p:nth-child(3),
-    .about-text p:nth-child(4),
-    .about-text p:nth-child(5) {
-        font-size: 14px;
+    .about-container p:nth-child(3) {
+        font-size: 30pt;
     }
     .projects {
-        padding: 2% 5% 0px 5%;
+        width: 1000px;
+        height: auto;
+    }
+    .projects-text p:nth-child(1) {
+        font-size: 50pt;
+    }
+    .projects-text p:nth-child(2) {
+        font-size: 30pt;
+    }
+    .projects-text p:nth-child(3) {
+        font-size: 30pt;
     }
     .box-container {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
-    }
-    .projects {
-        height: auto;
+        align-items: center;
     }
     .box1,
     .box2,
     .box3,
     .box4 {
+        width: 1000px;
+        height: 110vh;
         flex-grow: 1;
         margin: 10px;
     }
-    .contact-me {
-        height: 200px;
+    .box1 span,
+    .box2 span,
+    .box3 span,
+    .box4 span {
+        height: 100px;
+        width: 100px;
+        font-size: 30pt;
     }
-    .contact-me p {
-        font-size: 26px;
+    .box1 p:nth-child(2),
+    .box2 p:nth-child(2),
+    .box3 p:nth-child(2),
+    .box4 p:nth-child(2) {
+        font-size: 50pt;
+    }
+    .box1 p:nth-child(3),
+    .box2 p:nth-child(3),
+    .box3 p:nth-child(3),
+    .box4 p:nth-child(3) {
+        width: 800px;
+        font-size: 30pt;
+    }
+    .box1 button,
+    .box2 button,
+    .box3 button,
+    .box4 button {
+        width: 300px;
+        height: 70px;
+        border-radius: 35px;
+        font-size: 30pt;
+    }
+    .contact-me {
+        width: 1000px;
+        height: 80vh;
+        padding: 0% 10%;
+    }
+    .contact-me p:nth-child(1) {
+        font-size: 50pt;
     }
     .contact-me button {
-        font-size: 14px;
-        height: 35px;
-        width: 160px;
+        font-size: 20pt;
+        width: 300px;
+        height: 70px;
+        font-size: 30pt;
+        border-radius: 35px;
     }
-} */
+    footer {
+        padding: 7%;
+        width: 1000px;
+        height: auto;
+    }
+    footer p:nth-child(1) {
+        font-size: 40pt;
+    }
+    .social-icons {
+        width: 1000px;
+        justify-content: center;
+        font-size: 40pt;
+    }
+    footer p:nth-child(2),
+    footer p:nth-child(3),
+    footer p:nth-child(4) {
+        font-size: 30pt;
+    }
+    .attached-icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        padding: 0px;
+        margin: 0px;
+        line-height: 0px;
+        background-color: white;
+        border: 1px solid #cbcbcb;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    }
+    .attached-icons i {
+        font-size: 40pt;
+    }
+}
