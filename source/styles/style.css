@@ -52,7 +52,7 @@ nav ul {
 
 nav li a:hover {
     border-bottom: 1px solid white;
-    border-radius: 25px;
+    border-radius: 35px;
     font-weight: 300px;
     color: white;
     background-color: rgb(3, 110, 240);

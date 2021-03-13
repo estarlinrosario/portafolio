@@ -4,8 +4,9 @@
 <head>
 
     <meta charset="UTF-8" lang="es">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="source/styles/style.css" type="text/css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script rel="javascript" src="source/js/main.js" type="text/javascript"></script>
 
     <script src="https://kit.fontawesome.com/79c5bd8f0b.js" crossorigin="anonymous"></script>
@@ -79,7 +80,7 @@
                     <p class="heading">Web Design</p>
                     <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <button>Read More</button>
+                    <button name="readmore">Read More</button>
 
                 </div>
                 <!--Second box-->
@@ -88,7 +89,7 @@
                     <p class="heading">Web Design</p>
                     <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <button>Read More</button>
+                    <button name="readmore">Read More</button>
                 </div>
                 <!--third box-->
                 <div class="box3">
@@ -96,7 +97,7 @@
                     <p class="heading">Web Design</p>
                     <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <button>Read More</button>
+                    <button name="readmore">Read More</button>
                 </div>
                 <!--fourth box-->
                 <div class="box4">
@@ -104,13 +105,13 @@
                     <p class="heading">Web Design</p>
                     <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <button>Read More</button>
+                    <button name="readmore">Read More</button>
                 </div>
             </div>
         </div>
         <div class="contact-me" id="contact-me">
             <p>If you want to reach out to Me</p>
-            <button class="contactMe">Contact Me</button>
+            <button class="contactMe" id="contactme">Contact Me</button>
         </div>
     </main>
     <!--footer-->
@@ -139,12 +140,14 @@
                 $('.toggle').toggleClass('active')
                 $('nav').toggleClass('active')
 
-            })
+            });
             $('.menu-hide').click(function() {
                 $('.toggle').toggleClass('active')
                 $('nav').toggleClass('active');
 
-            })
+            });
+
+
         })
     </script>
 </body>
