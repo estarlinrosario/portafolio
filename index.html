@@ -22,7 +22,7 @@
             <a href="index.html" class="logo">Estarlin  Rosario </a>
 
             <!--Menu Buttons-->
-            <ul>
+            <ul class="menu-hide">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-container">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -138,6 +138,11 @@
             $('.toggle').click(function() {
                 $('.toggle').toggleClass('active')
                 $('nav').toggleClass('active')
+
+            })
+            $('.menu-hide').click(function() {
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active');
 
             })
         })
